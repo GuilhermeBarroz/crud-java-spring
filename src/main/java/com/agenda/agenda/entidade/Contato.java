@@ -10,7 +10,7 @@ import jakarta.persistence.Id;
 public class Contato {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
     @Column(nullable = false)
     private String nome;
     @Column(nullable = false)
@@ -23,10 +23,10 @@ public class Contato {
     private String urlAvatar;
 
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
     public String getNome() {
